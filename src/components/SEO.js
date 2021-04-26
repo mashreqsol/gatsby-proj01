@@ -13,7 +13,7 @@ const query = graphql`
     }
   }
 `
-// Title added in SEO
+// Author added in SEO
 const SEO = ({ title, author, description }) => {
   const { site } = useStaticQuery(query)
   const metaDescription = description || site.siteMetadata.description
