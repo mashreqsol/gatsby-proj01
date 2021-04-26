@@ -48,7 +48,7 @@ const contact = ({
           </article>
         </section>
         <section className="featured-recipes">
-          <h5>Features Recipes</h5>
+          <h5>Featured Recipes</h5>
           <RecipesList recipes={recipes} />
         </section>
       </main>
