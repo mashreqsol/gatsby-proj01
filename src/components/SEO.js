@@ -25,6 +25,10 @@ const SEO = ({ title, author, description }) => {
       meta={[
         { name: `description`, content: metaDescription },
         { name: `author`, content: metaAuthor },
+        {
+          name: `google-site-verification`,
+          content: "SfTWHs8Lw0PGxhrkgbTHQQ4xBNxQeHqzPDg7nIdmeg0",
+        },
       ]}
     ></Helmet>
   )
