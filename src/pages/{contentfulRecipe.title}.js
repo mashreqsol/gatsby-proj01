@@ -31,7 +31,12 @@ const RecipeTemplate = ({ data }) => {
             ></GatsbyImage>
             <article className="recipe-info">
               <h2>{title}</h2>
-              <p>{descrip}</p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html:
+                    data.contentfulRecipe.descrip.childMarkdownRemark.html,
+                }}
+              ></p>
               {/* icons */}
               <div className="recipe-icons">
                 <article>
@@ -117,6 +122,9 @@ export const query = graphql`
       prepTime
       serving
       descrip {
+        childMarkdownRemark {
+          html
+        }
         descrip
       }
       content {
