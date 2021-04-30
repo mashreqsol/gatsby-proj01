@@ -72,7 +72,7 @@ const RecipeTemplate = ({ data }) => {
           {/* Rest of the Content */}
           <section className="recipe-content">
             <article>
-              <h4>Instructions</h4>
+              <h4>STEPS OF COOKING</h4>
               {instructions.map((item, index) => {
                 return (
                   <div key={index} className="single-instruction">
