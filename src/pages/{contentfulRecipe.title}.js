@@ -31,7 +31,12 @@ const RecipeTemplate = ({ data }) => {
             ></GatsbyImage>
             <article className="recipe-info">
               <h2>{title}</h2>
-              <p>{descrip}</p>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html:
+                    data.contentfulRecipe.descrip.childMarkdownRemark.html,
+                }}
+              ></div>
               {/* icons */}
               <div className="recipe-icons">
                 <article>
